@@ -1,0 +1,28 @@
+## YAML Template.
+---
+Spring:
+    servlet:
+    multipart:
+            enabled:true            
+    application:
+        name: gestion workflow 
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: true
+    datasource:
+       
+        url: jdbc:sqlserver://localhost;databaseName=GestionWorkflow
+        username: sa
+        password: sa
+        
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    jpa:
+        show-sql: true
+        hibernate:
+            dialect: org.hibernate.dialect.SQLServer2012Dialect
+            ddl-auto: create-drop
+server:
+    port: 8080
+    
